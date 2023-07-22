@@ -23,7 +23,7 @@ export default function Donate() {
     }, [])
 
     async function GetListDonation() {
-        return fetch('http://localhost:8000/donation', {
+        return fetch('https://orchids-express-deploy.vercel.app/donation', {
             method: 'GET',
         })
             .then(response => response.json())
