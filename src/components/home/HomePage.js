@@ -154,12 +154,15 @@ export default function HomePage({ isLogin, setIsLogin }) {
                         <div id='your-teams-board' style={{ overflow: 'hidden', marginLeft: "5px" }}>
                             <YourTeams teams={myTeam} />
                         </div>
+                        <h2>*Trang web đang ở bản thử nghiệm, các chức hoạt động sẽ còn chậm. Xin hãy chờ đợi trong giây lát</h2>
                     </div>
                     : <div className='home-left'>
                         <br />
                         <h5 style={{ marginLeft: '2.3rem' }}>*Đăng nhập để có trải nghiệm tốt nhất</h5>
                         <Login setIsLogin={setIsLogin} getMini={'true'} />
-                    </div>}
+                        <h2>*Trang web đang ở bản thử nghiệm, các chức hoạt động sẽ còn chậm. Xin hãy chờ đợi trong giây lát</h2>
+                    </div>
+                }
                 <div className='home-center'>
                     {
                         window.location.pathname === '/' ?
@@ -238,7 +241,7 @@ function YourTeams({ teams }) {
                 <AccordionSummary>
                     <Box sx={{ display: "flex", width: "100%", alignItems: "center" }}>
                         <Typography variant='h6' flexGrow={1} color='gray' fontWeight="bold" id='your-teams-expan'><i className="fa-duotone fa-people-group" /> Nhóm của bạn</Typography>
-                        <i className="fa-solid fa-caret-down fa-lg"/>
+                        <i className="fa-solid fa-caret-down fa-lg" />
                     </Box>
                 </AccordionSummary>
                 <AccordionDetails>
