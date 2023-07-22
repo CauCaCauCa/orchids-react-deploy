@@ -10,7 +10,7 @@ export default function Login({ setIsLogin, getMini }) {
     const navigate = useNavigate();
 
     async function handleCredentialResponse(response) {
-        fetch('http://localhost:8000/login', {
+        fetch('https://orchids-express-deploy.vercel.app/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -61,7 +61,7 @@ export default function Login({ setIsLogin, getMini }) {
         /* global google */
         google.accounts.id.initialize({
             client_id:
-                '721133937478-2m8nenr610qpuabsgm9ffiu5peumi8vc.apps.googleusercontent.com',
+                '575516075576-l0qf0vlpj0evqmc50k4osvofqv1qmj9f.apps.googleusercontent.com',
             callback: handleCredentialResponse
         });
 
