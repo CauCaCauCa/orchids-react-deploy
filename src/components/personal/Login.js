@@ -10,7 +10,7 @@ export default function Login({ setIsLogin, getMini }) {
     const navigate = useNavigate();
 
     async function handleCredentialResponse(response) {
-        fetch('https://orchids-express-deploy.vercel.app', {
+        fetch('https://orchids-express-deploy.vercel.app/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
